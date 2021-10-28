@@ -1,0 +1,12 @@
+all:
+  vars:
+    env: prod
+  children:
+    bffs:
+      hosts:
+        tenant_bffs:
+          ansible_host: 127.0.0.1
+    bih:
+      hosts:
+        tenant_bih:
+          ansible_host: 127.0.0.1

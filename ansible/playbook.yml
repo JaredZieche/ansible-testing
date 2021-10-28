@@ -1,0 +1,16 @@
+- name: a playbook
+  hosts: all
+  connection: local
+  tasks:
+    - name: get var
+      debug:
+        msg: "{{ tenant_name }}'s vault path is {{ vault_path }}"
+
+    - name: "Run vault role"
+      import_role:
+        name: "vault"
+        #allow_duplicates: yes
+        #tasks_from: main
+        #vars_from: main
+        #defaults_from: main
+        #private: no

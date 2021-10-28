@@ -1,0 +1,11 @@
+---
+# tasks file for vault
+- name: "show a vault secret"
+  debug:
+    msg: "{{ secret.data.username }}"
+    #var:
+    #verbosity:
+- name: "show a vault secret"
+  debug:
+    msg: "{{ secret.data.password }}"
+    #var:

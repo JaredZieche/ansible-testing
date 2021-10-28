@@ -1,0 +1,12 @@
+---
+# tasks file for helm
+- name: "Run a helm chart"
+  helm:
+    #disable_hooks: no
+    name: "{{ chart_name }}"
+    namespace: "{{ tenant_namespace }}"
+    chart: "{{ chart_name }}"
+    state: present
+    values: "{{ helm_values }}"
+    #host: localhost
+    #port: 44134

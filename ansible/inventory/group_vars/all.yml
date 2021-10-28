@@ -1,0 +1,2 @@
+test_var: "all"
+vault_path: "secret/{{ tenant_name }}/{{ tenant_name }}-{{ env }}"
