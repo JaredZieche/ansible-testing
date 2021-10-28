@@ -2,10 +2,10 @@
 # tasks file for vault
 - name: "show a vault secret"
   debug:
-    msg: "{{ secret.data.username }}"
+    msg: "{{ secret | json_query(query_1) }}"
     #var:
     #verbosity:
 - name: "show a vault secret"
   debug:
-    msg: "{{ secret.data.password }}"
+    msg: "{{ secret | json_query(query_2) }}"
     #var:

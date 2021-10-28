@@ -1,2 +1,5 @@
 test_var: "all"
-vault_path: "secret/{{ tenant_name }}/{{ tenant_name }}-{{ env }}"
+vault_path: "secret/data/{{ tenant_name }}/{{ project_name + '-' + tenant_name }}/{{ env }}"
+project_name: "bip"
+
+
