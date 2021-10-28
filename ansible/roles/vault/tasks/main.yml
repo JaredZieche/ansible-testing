@@ -5,7 +5,9 @@
     msg: "{{ secret | json_query(query_1) }}"
     #var:
     #verbosity:
+  when: query_1 is defined
 - name: "show a vault secret"
   debug:
-    msg: "{{ secret | json_query(query_2) }}"
+    msg: "{{ secret | json_query(tenant_query) }}"
     #var:
+  when: tenant_query is defined

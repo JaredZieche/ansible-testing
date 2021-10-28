@@ -1,2 +1,3 @@
 test_var: "bffs"
 tenant_name: "bffs"
+tenant_query: '"bgs.base-uri"'

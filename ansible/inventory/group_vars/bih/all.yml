@@ -1,2 +1,4 @@
 test_var: "bih"
 tenant_name: "bih"
+vault_path: "secret/data/{{ tenant_name }}/{{ env }}"
+tenant_query: '"BIH_GITHUB_TOKEN"'
