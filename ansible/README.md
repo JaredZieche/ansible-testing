@@ -1,3 +1,7 @@
+# Requirements
+- vault cli
+- ansible >= 2.9
+- service token or other login method to vault to set access
 # Ansible Testing with vault
 1. set `VAULT_ADDR` environment variable and log in to vault
 ```shell
